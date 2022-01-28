@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/toolbar_menu_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/doubt"
+        android:icon="@drawable/ic_doubt"
+        android:title="@string/toolbar_menu_tips"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/changeView"
+        android:icon="@drawable/ic_scan"
+        android:title="@string/toolbar_menu_change_to_reg"
+        app:showAsAction="always" />
+
+</menu>

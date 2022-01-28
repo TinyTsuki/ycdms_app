@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lihang.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        app:hl_cornerRadius="12dp">
+
+        <LinearLayout
+            android:id="@+id/pop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="@string/member_info"
+                android:textColor="#999999"
+                android:textSize="20sp" />
+
+            <com.lihang.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </com.lihang.ShadowLayout>
+
+            <com.lihang.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="15dp"
+                app:hl_layoutBackground="#FFF"
+                app:hl_layoutBackground_true="#BBB"
+                app:hl_shapeMode="ripple">
+
+                <Button
+                    android:id="@+id/btn_okay"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_button"
+                    android:text="@string/okay"
+                    android:textColor="#38ACFF"
+                    android:textStyle="bold" />
+            </com.lihang.ShadowLayout>
+
+        </LinearLayout>
+    </com.lihang.ShadowLayout>
+</RelativeLayout>
